@@ -1,6 +1,6 @@
 
 
-var catNum = 5;
+var catNum = 8;
 if(catNum !== 0){
 	$('body').append('<ul>');
 	for(var i = 0 ; i < catNum; i++){
@@ -45,6 +45,14 @@ $('#cat0, #cat1, #cat2, #cat3 ,#cat4').click(function(event){
     	count3++;
     	$('.pic').append("<p>"+count3+"</p>");
         /* specific code for button4 */
+
+    } else if($(event.target).attr('id')=='cat4'){
+         $('.pic').empty();
+        $('.pic').append("<img src='img/cat" + 4 + ".jpg '>");
+        count4++;
+        $('.pic').append("<p>"+count4+"</p>");
+        /* specific code for button4 */
+        
     } 
 });
 
